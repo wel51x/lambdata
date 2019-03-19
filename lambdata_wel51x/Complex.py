@@ -6,6 +6,7 @@ Classes to represent Complex numbers.
 class Complex:
     r = 0.0
     i = 0.0
+    
     def __init__(self, realpart, imagpart):
         self.r = realpart
         self.i = imagpart
@@ -28,11 +29,3 @@ class Complex:
             return 0.0, 0.0, "zero-divide attempted, inputs =", realpart, imagpart
         else:
             return self.r / realpart, self.i / imagpart
-
-x = Complex(3.0, -4.5)
-print(x.r, x.i)
-print(x.add(1, 3))
-print(x.subtract(1, 3))
-print(x.multiply(1, 3))
-print(x.divide(1, 3))
-print(x.divide(3))
